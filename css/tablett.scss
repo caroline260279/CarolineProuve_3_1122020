@@ -1,0 +1,116 @@
+header{
+    height: 150px;
+    padding-top:5%;
+    position:relative;
+    h1{
+        font-size: 5rem;
+    }
+}
+
+
+/*location*/
+form{
+    text-align: center;
+}
+.location_header{
+
+    i{
+        margin-left: 0;
+        font-size: 2rem;
+    }
+    input{
+        width:170px;
+        font-size: 2rem;
+    }
+
+}
+.location_p_one, .location_p_two{
+    margin: 0;
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+}
+@media screen and (min-width:700px) and (max-width:960px){
+    .btn{
+        font-size: 2.2rem;
+        height: 60px;
+        width: 500px;
+        text-align: center;
+    }
+    .btn_placement{
+
+        margin-left: calc((100% - 500px) / 2);
+        margin-right: calc((100% - 500px) / 2);
+    }
+    
+}
+
+/*process*/
+@media screen and (min-width:700px) and (max-width:960px){
+    .process_title{
+        font-size: 2.7rem;
+        padding-left: 10%;
+    }
+    .process_li{
+        font-size: 2.2rem;
+        width: 500px;
+        margin-left: calc((100% - 500px) / 2);
+        margin-right: calc((100% - 500px) / 2);
+    }
+}
+
+/*restaurants*/
+.restaurants{
+    display: grid;
+    grid-template-rows: 130px 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "T  T "
+    "Z1 Z2"
+    "Z3 Z4";
+
+    a:nth-child(1), .restaurants_figure:nth-child(1){
+        grid-area: Z1;
+    }
+    .restaurants_figure:nth-child(2){
+        grid-area: Z2;
+    }
+    .restaurants_figure:nth-child(3){
+        grid-area: Z3;
+    }
+    .restaurants_figure:nth-child(4){
+        grid-area: Z4;
+    }
+}
+
+.restaurants_title{
+    grid-area: T;
+    font-size: 2.7rem;
+    padding-left: 10%;
+}
+.restaurants_figure{
+    height: 200px;
+    max-width: 300px;
+}
+
+.restaurants_h{
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+.restaurants_p{
+    font-size: 1.2rem;
+}
+.like{
+    font-size: 1.8rem;
+}
+.info_image{
+    top:-120px;
+    right:20px;
+}
+/*footer*/
+footer{
+    padding-left: 10%;
+}
+.footer_li{
+    list-style-type: none;
+}
