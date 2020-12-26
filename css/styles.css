@@ -51,11 +51,6 @@ body {
   line-height: 1.5;
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
 /* Make images easier to work with */
 img,
 picture {
@@ -65,7 +60,6 @@ picture {
 
 /* Inherit fonts for inputs and buttons */
 input,
-button,
 textarea,
 select {
   font: inherit;
@@ -98,6 +92,193 @@ h1, .logo {
   font-family: 'Shrikhand',serif, sans-serif;
 }
 
+/* loader */
+.container {
+  display: inline-block;
+  width: 100%;
+  height: 2500px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Shrikhand",serif,sans-serif;
+  text-align: center;
+  -webkit-animation: fantom 5s linear forwards;
+          animation: fantom 5s linear forwards;
+  position: relative;
+  z-index: 2;
+}
+
+.acceuil {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-animation: apparition 5s linear forwards;
+          animation: apparition 5s linear forwards;
+}
+
+.charge {
+  height: 300px;
+  line-height: 500px;
+  font-size: 7rem;
+  color: #FF79DA;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.loader {
+  position: relative;
+  width: 240px;
+  height: 40px;
+  margin: auto;
+  border-radius: 35px;
+  background: white;
+  -webkit-box-shadow: -2px -2px 8px #FF79DA;
+          box-shadow: -2px -2px 8px #FF79DA;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 35px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-animation: loading 3500ms linear forwards;
+          animation: loading 3500ms linear forwards;
+}
+
+.loader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 40px;
+  border-radius: 35px;
+  background: transparent;
+  -webkit-box-shadow: 2px 2px 6px #9356DC;
+          box-shadow: 2px 2px 6px #9356DC;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    width: 40px;
+  }
+  100% {
+    width: 240px;
+  }
+  100% {
+  }
+}
+
+@keyframes loading {
+  0% {
+    width: 40px;
+  }
+  100% {
+    width: 240px;
+  }
+  100% {
+  }
+}
+
+@-webkit-keyframes fantom {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  61% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fantom {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  61% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  61% {
+    opacity: 0.2;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  7% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  61% {
+    opacity: 0.2;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  7% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*fin loader*/
 /*header*/
 header {
   height: 60px;
@@ -255,6 +436,19 @@ ol li:nth-child(3)::before {
   content: "3";
 }
 
+ol li:nth-child(3)::after {
+  content: "bloc";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.08;
+  background-color: #FF79DA;
+  border-radius: 25px;
+}
+
 /*restaurants*/
 .restaurants {
   background-color: #f5f3f3;
@@ -307,30 +501,32 @@ ol li:nth-child(3)::before {
 }
 
 .fa-heart {
-  font-size: 2.3rem;
   position: absolute;
   top: 18px;
   right: 25px;
 }
 
-.like .far {
-  color: black;
-}
-
-.like .fas {
-  display: none;
-}
-
-.like:hover .far {
-  display: none;
-}
-
-.like:hover .fas {
-  display: block;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background-clip: text;
+.fas {
+  font-size: 2.35rem;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.fas:hover {
+  opacity: 1;
+}
+
+.far {
+  font-size: 2.15rem;
+  position: absolute;
+  top: 19px;
+  right: 26px;
 }
 
 .info_image {
@@ -372,14 +568,19 @@ footer h4 a {
 
 .footer_li i {
   padding-right: 10px;
+  opacity: 1;
+  color: white;
+  font-size: 1.5rem;
 }
 
 ul {
   list-style: none;
 }
 
-ul li:nth-child(2) i {
+ul li:nth-child(2) .fa-hands-helping {
   font-size: 1rem;
+  opacity: 1;
+  color: white;
 }
 
 ul a {

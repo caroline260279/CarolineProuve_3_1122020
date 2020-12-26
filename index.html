@@ -7,17 +7,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />   
-    <link rel="stylesheet" href="css/styles.css" /> 
+    <link rel="stylesheet" href="css/styles.css" />  
     <link rel="stylesheet" href="css/tablett.css" media="screen and (min-width: 450px)"/> 
-    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 960px)"/>    
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 960px)"/>   
+
     <title>ohmyfood</title>
 </head>
-<body>
-    <header>
+<div class="container">
+
+    <div class="charge">chargement</div>
+    <div class="loader"></div>
+    
+</div>
+
+<div class="acceuil">
+    
+   <header>
         <a href="index.html"><h1>ohmyfood</h1></a>
     </header>
 
-
+    <body>
     <section class="location">
         <form method="post" action="traitement.php">
             <div class="location_header">
@@ -45,14 +54,14 @@
 
         <h2 class="restaurants_title">Restaurants</h2>
 
-        <a href="index2.html">
+        <a href="menu1.html">
             <figure class="restaurants_figure">
                 <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du gout">
                 <figcaption class="restaurants_figcaption">
                     <h3 class="restaurants_h">La palette du goût</h3>
                     <p class="restaurants_p">Ménilmontant</p>
                     <p class="like"><i class="far fa-heart"></i><i class="fas fa-heart"></i></p>
-                    <p class="info_image">nouveau</p>
+                    <p class="info_image">Nouveau</p>
                 </figcaption>
             </figure>
         </a>
@@ -63,7 +72,7 @@
                     <h3 class="restaurants_h">La note enchantée</h3>
                     <p class="restaurants_p">Charonne</p>
                     <p class="like"><i class="far fa-heart"></i><i class="fas fa-heart"></i></p>
-                    <p class="info_image">nouveau</p>
+                    <p class="info_image">Nouveau</p>
                 </figcaption>
             </figure>
         </a>
@@ -98,4 +107,5 @@
             <li class="footer_li"><a href="mailto:caroline.prouve@orange.fr">Contact</a></li>
         </ul>
     </footer>
-</body>     
+</body> 
+</div>     

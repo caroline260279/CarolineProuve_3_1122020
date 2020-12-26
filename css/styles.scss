@@ -4,6 +4,7 @@ $primary: #9356DC;
 $secondary: #FF79DA;
 $tertiary: #99E2D0;
 
+
 :root{
     font-size: 10px;
 }
@@ -16,6 +17,136 @@ h1, .logo{
     font-family: 'Shrikhand',serif, sans-serif;
 }
 
+/* loader */
+.container{
+    display: inline-block;
+    width: 100%;
+    height: 2500px;
+    box-sizing: border-box;
+    background-color:white;
+    margin: 0;
+    padding: 0;
+    font-family: "Shrikhand",serif,sans-serif;
+    text-align: center;
+    animation: fantom 5s linear forwards;
+    position: relative;
+    z-index: 2;
+}
+
+.acceuil{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    animation: apparition 5s linear forwards;
+}
+
+.charge{
+    height: 300px;
+    line-height: 500px;
+    font-size: 7rem;
+    color: $secondary;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 900;
+}
+.loader{
+    position: relative;
+    width: 240px;
+    height: 40px;
+    margin: auto;
+    border-radius: 35px;
+    background:  white;
+    box-shadow: -2px -2px 8px $secondary;
+}
+.loader::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    border-radius: 35px;
+    background: linear-gradient(to bottom right,$secondary, $primary);
+    animation: loading 3500ms linear forwards;
+}
+.loader::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 40px;
+    border-radius: 35px;
+    background: transparent;
+    box-shadow: 2px 2px 6px $primary;
+
+}
+@keyframes loading{
+    0% {
+        width: 40px;
+    }
+    100% {
+        width:240px;
+    }
+    100%{
+
+    }
+}
+
+@keyframes fantom{
+    0%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    61%{
+        opacity: 0.5;
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes apparition{
+    0%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    61%{
+        opacity: 0.2;
+    }
+    70%{
+        opacity: 0.3;
+    }
+    7%{
+        opacity: 0.5;
+    }
+    80%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    } 
+
+}
+
+
+
+
+
+
+/*fin loader*/
 
 /*header*/
 header{
@@ -158,8 +289,22 @@ ol{
         &::before{
             content: "3";
         }
+        &::after{
+            content: "bloc";
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.08;
+            background-color: $secondary;
+            border-radius: 25px;
+        }
     }
 }
+
+
 
 
 /*restaurants*/
@@ -207,32 +352,34 @@ ol{
 
 }
 .fa-heart{
-    font-size: 2.3rem;
     position: absolute;
     top: 18px;
     right: 25px;
 }
-
-.like{
-    .far{
-        color: black;
-    }
-    .fas{
-        display: none;
-    }
+.fas{
+    font-size: 2.35rem;
+    background: linear-gradient(to bottom right,$secondary, $primary);
+    -webkit-background-clip:text;
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+    transition: opacity 1s;
     &:hover{
-        .far{
-            display: none;
-        }
-        .fas{
-            display:block;
-            background: -webkit-gradient(linear, left top, left bottom, from($primary), to($secondary));
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-        }
+        opacity: 1;
     }
 }
+.far{
+    font-size: 2.15rem;
+    position: absolute;
+    top: 19px;
+    right: 26px;
+
+}
+
+
+
+
+
 .info_image{
     width: 80px;
     height: 30px;
@@ -268,13 +415,18 @@ footer{
     padding: 5px 0 0 25px;
     i{
         padding-right: 10px;
+        opacity: 1;
+        color: white;
+        font-size: 1.5rem;
     }
 }
 ul{
     list-style: none;
     li:nth-child(2){
-        i{
+        .fa-hands-helping{
             font-size: 1rem;
+            opacity: 1;
+            color: white;
         }
     }
     a{
