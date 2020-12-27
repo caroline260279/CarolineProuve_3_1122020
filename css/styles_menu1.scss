@@ -81,9 +81,8 @@ header{
         width: 42px;
         font-size: 1.5rem;
         font-weight: 400;
-        margin: 25px 0 5px 20px;
+        margin: 25px 0 18px 20px;
         border-bottom: 3px solid $tertiary;
-        margin-bottom: 18px;
     }
 }
 
@@ -94,13 +93,13 @@ header{
     display: flex;
     flex-direction: row;
     width: 92%;
-    height: 70px;
+    height: 66px;
     background: white;
     border-radius: 15px;
     margin-left:4%;
     margin-right: 0;
     padding: 0;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     border: none;
 }
 
@@ -110,39 +109,39 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    height: 70px;
+    height: 66px;
     border-radius: 15px;
     padding: 0;
     border: none;
     &:hover + span{
- 
         animation: width 1s linear forwards;
     }
 
 }
 
     h3{
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         width: 100%;
-        height: 35px;
-        line-height: 35px;
+        height: 33px;
+        line-height: 33px;
         text-align: left;
-        padding-left: 10px;
+        padding: 5px 0 0 10px;
         margin: 0;
         text-overflow: ellipsis;
     }
     .more{
         font-size: 1.5rem;
         width: 80%;
-        height: 35px;
+        height: 33px;
         text-align: left;
-        padding-left: 10px;
+        padding: 5px 0 0 10px;
         margin: 0;
     }
     .price{
         flex: 1;
         font-size: 1.5rem;
         border-radius: 0 15px 15px 0;
+        padding-top: 5px;
     }
 
 
@@ -158,10 +157,9 @@ span{
     font-size: 2rem;
     color: white;
     margin-top: 10px;
+    overflow: hidden;
 }
-.fa-check-circle{
-    border: 2px solid black;
-}
+
 
 
 @keyframes width{
@@ -207,7 +205,7 @@ span{
         width: 42px;
         font-size: 1.5rem;
         font-weight: 400;
-        margin: 25px 0 5px 20px;
+        margin: 15px 0 18px 20px;
         border-bottom: 3px solid $tertiary;
     }
 }
@@ -218,10 +216,11 @@ span{
         width: 42px;
         font-size: 1.5rem;
         font-weight: 400;
-        margin: 25px 0 5px 20px;
+        margin: 15px 0 18px 20px;
         border-bottom: 3px solid $tertiary;
     }
 }
+
 .btn{
     width: 50%;
     height: 48px;
@@ -232,17 +231,17 @@ span{
     background: linear-gradient(to bottom right,$secondary, $primary);
     box-shadow: 0 5px 10px silver;
     border: none;
-
     &:hover{
         background: linear-gradient(to bottom right,lighten($secondary, 5%),lighten($primary, 5%)) ;
         box-shadow: 0 5px 10px darken(silver, 20%);
     }
 }
-.btn_placement{
-    margin: 52px 0 90px 95px ;
+
+.btn_placement {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    margin-left: 25%;
 }
-
-
 
 
 
@@ -252,7 +251,7 @@ span{
 footer{
     background-color: rgb(29, 26, 26);
     color: white;
-    height: 180px;
+    height: 200px;
     h4{
         font-family: 'Shrikhand';
         font-size: 1.8rem;
@@ -265,21 +264,25 @@ footer{
     }
 }
 .footer_li{
+    list-style: none;
     font-size: 1.5rem;
     padding: 5px 0 0 25px;
     i{
         padding-right: 10px;
+        font-size: 1.5rem;
     }
 }
 ul{
+    list-style: none;
     li:nth-child(2){
-        i{
+        .fa-hands-helping{
             font-size: 1rem;
         }
+    }
     a{
         color: white;
         text-decoration: none;
     }
-    }
 }
+
 

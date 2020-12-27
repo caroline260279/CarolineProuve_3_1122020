@@ -161,9 +161,8 @@ header h1 {
   width: 42px;
   font-size: 1.5rem;
   font-weight: 400;
-  margin: 25px 0 5px 20px;
+  margin: 25px 0 18px 20px;
   border-bottom: 3px solid #99E2D0;
-  margin-bottom: 18px;
 }
 
 .bloc {
@@ -175,13 +174,13 @@ header h1 {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 92%;
-  height: 70px;
+  height: 66px;
   background: white;
   border-radius: 15px;
   margin-left: 4%;
   margin-right: 0;
   padding: 0;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
   border: none;
 }
 
@@ -196,7 +195,7 @@ header h1 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  height: 70px;
+  height: 66px;
   border-radius: 15px;
   padding: 0;
   border: none;
@@ -208,12 +207,12 @@ header h1 {
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   width: 100%;
-  height: 35px;
-  line-height: 35px;
+  height: 33px;
+  line-height: 33px;
   text-align: left;
-  padding-left: 10px;
+  padding: 5px 0 0 10px;
   margin: 0;
   text-overflow: ellipsis;
 }
@@ -221,9 +220,9 @@ h3 {
 .more {
   font-size: 1.5rem;
   width: 80%;
-  height: 35px;
+  height: 33px;
   text-align: left;
-  padding-left: 10px;
+  padding: 5px 0 0 10px;
   margin: 0;
 }
 
@@ -233,6 +232,7 @@ h3 {
           flex: 1;
   font-size: 1.5rem;
   border-radius: 0 15px 15px 0;
+  padding-top: 5px;
 }
 
 span {
@@ -247,10 +247,7 @@ span {
   font-size: 2rem;
   color: white;
   margin-top: 10px;
-}
-
-.fa-check-circle {
-  border: 2px solid black;
+  overflow: hidden;
 }
 
 @-webkit-keyframes width {
@@ -327,7 +324,7 @@ span {
   width: 42px;
   font-size: 1.5rem;
   font-weight: 400;
-  margin: 25px 0 5px 20px;
+  margin: 15px 0 18px 20px;
   border-bottom: 3px solid #99E2D0;
 }
 
@@ -340,7 +337,7 @@ span {
   width: 42px;
   font-size: 1.5rem;
   font-weight: 400;
-  margin: 25px 0 5px 20px;
+  margin: 15px 0 18px 20px;
   border-bottom: 3px solid #99E2D0;
 }
 
@@ -366,14 +363,16 @@ span {
 }
 
 .btn_placement {
-  margin: 52px 0 90px 95px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  margin-left: 25%;
 }
 
 /*footer*/
 footer {
   background-color: #1d1a1a;
   color: white;
-  height: 180px;
+  height: 200px;
 }
 
 footer h4 {
@@ -389,19 +388,25 @@ footer h4 a {
 }
 
 .footer_li {
+  list-style: none;
   font-size: 1.5rem;
   padding: 5px 0 0 25px;
 }
 
 .footer_li i {
   padding-right: 10px;
+  font-size: 1.5rem;
 }
 
-ul li:nth-child(2) i {
+ul {
+  list-style: none;
+}
+
+ul li:nth-child(2) .fa-hands-helping {
   font-size: 1rem;
 }
 
-ul li:nth-child(2) a {
+ul a {
   color: white;
   text-decoration: none;
 }
