@@ -123,6 +123,7 @@ header h1 {
 /*titre*/
 .title {
   height: 300px;
+  position: relative;
 }
 
 .title img {
@@ -136,7 +137,7 @@ header h1 {
 .title h1 {
   width: 100%;
   position: absolute;
-  top: 280px;
+  top: 224px;
   background-color: #f5f3f3;
   border-radius: 35px 35px 0 0;
   font-size: 2.8rem;
@@ -146,10 +147,32 @@ header h1 {
 .title .fa-heart {
   font-size: 2.4rem;
   position: absolute;
-  top: 320px;
+  top: 260px;
   right: 10%;
   background-color: #f5f3f3;
-  color: black;
+}
+
+.full {
+  font-size: 2.35rem;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.full:hover {
+  opacity: 1;
+}
+
+.empty {
+  font-size: 2.15rem;
+  position: absolute;
+  top: 19px;
+  right: 26px;
 }
 
 /*starter*/
@@ -165,7 +188,8 @@ header h1 {
   border-bottom: 3px solid #99E2D0;
 }
 
-.bloc {
+/*transition*/
+.keyf_one {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,7 +205,63 @@ header h1 {
   margin-right: 0;
   padding: 0;
   margin-bottom: 15px;
+  -webkit-box-shadow: 0 4px 15px silver;
+          box-shadow: 0 4px 15px silver;
   border: none;
+  opacity: 0;
+  -webkit-animation: plat 2s ease-in-out forwards;
+          animation: plat 2s ease-in-out forwards;
+  cursor: pointer;
+}
+
+.keyf_two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 92%;
+  height: 66px;
+  background: white;
+  border-radius: 15px;
+  margin-left: 4%;
+  margin-right: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0 4px 15px silver;
+          box-shadow: 0 4px 15px silver;
+  border: none;
+  opacity: 0;
+  -webkit-animation: plat 2s 333ms ease-in-out forwards;
+          animation: plat 2s 333ms ease-in-out forwards;
+  cursor: pointer;
+}
+
+.keyf_three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 92%;
+  height: 66px;
+  background: white;
+  border-radius: 15px;
+  margin-left: 4%;
+  margin-right: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0 4px 15px silver;
+          box-shadow: 0 4px 15px silver;
+  border: none;
+  opacity: 0;
+  -webkit-animation: plat 2s 666ms ease-in-out forwards;
+          animation: plat 2s 666ms ease-in-out forwards;
+  cursor: pointer;
 }
 
 .bloc_resto {
@@ -206,6 +286,11 @@ header h1 {
           animation: width 1s linear forwards;
 }
 
+.bloc_resto:hover + span > i {
+  -webkit-animation: rotate 1s linear forwards;
+          animation: rotate 1s linear forwards;
+}
+
 h3 {
   font-size: 1.7rem;
   width: 100%;
@@ -219,20 +304,26 @@ h3 {
 
 .more {
   font-size: 1.5rem;
-  width: 80%;
   height: 33px;
+  width: 85%;
   text-align: left;
   padding: 5px 0 0 10px;
   margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
 }
 
 .price {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  height: 33px;
+  line-height: 33px;
   font-size: 1.5rem;
   border-radius: 0 15px 15px 0;
-  padding-top: 5px;
+  padding: 5px 10px 0px 0x;
+  flex: 1;
 }
 
 span {
@@ -240,14 +331,38 @@ span {
   width: 0px;
   height: 50px;
   border-radius: 0 15px 15px 0;
-  opacity: 0;
-  line-height: 70px;
+  opacity: 1;
+  line-height: 50px;
   font-size: 2rem;
   background-color: #99E2D0;
-  font-size: 2rem;
   color: white;
-  margin-top: 10px;
   overflow: hidden;
+}
+
+@-webkit-keyframes plat {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes plat {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes width {
@@ -255,7 +370,7 @@ span {
     width: 0px;
     height: 50px;
     line-height: 50px;
-    margin-top: 10px;
+    margin-top: 8px;
     opacity: 0;
     border: none;
   }
@@ -263,20 +378,20 @@ span {
     width: 0px;
     height: 50px;
     line-height: 50px;
-    margin-top: 10px;
+    margin-top: 8px;
     opacity: 0;
   }
   25% {
     width: 15px;
-    height: 70px;
-    line-height: 70px;
+    height: 66px;
+    line-height: 66px;
     margin-top: 0;
     opacity: 0.5;
   }
   100% {
     width: 60px;
-    height: 70px;
-    line-height: 70px;
+    height: 66px;
+    line-height: 66px;
     margin-top: 0;
     opacity: 1;
   }
@@ -287,7 +402,7 @@ span {
     width: 0px;
     height: 50px;
     line-height: 50px;
-    margin-top: 10px;
+    margin-top: 8px;
     opacity: 0;
     border: none;
   }
@@ -295,22 +410,52 @@ span {
     width: 0px;
     height: 50px;
     line-height: 50px;
-    margin-top: 10px;
+    margin-top: 8px;
     opacity: 0;
   }
   25% {
     width: 15px;
-    height: 70px;
-    line-height: 70px;
+    height: 66px;
+    line-height: 66px;
     margin-top: 0;
     opacity: 0.5;
   }
   100% {
     width: 60px;
-    height: 70px;
-    line-height: 70px;
+    height: 66px;
+    line-height: 66px;
     margin-top: 0;
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
 }
 

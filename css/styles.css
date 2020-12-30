@@ -125,6 +125,7 @@ h1, .logo {
 }
 
 .charge {
+  font-family: "Shrikhand",serif,sans-serif;
   height: 300px;
   line-height: 500px;
   font-size: 5rem;
@@ -535,6 +536,10 @@ ol li:nth-child(3)::after {
   position: absolute;
   top: 19px;
   right: 26px;
+}
+
+.like {
+  cursor: pointer;
 }
 
 .info_image {

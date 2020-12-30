@@ -113,8 +113,18 @@ form{
 }
 /*footer*/
 footer{
-    padding-left: 10%;
-}
-.footer_li{
-    list-style-type: none;
-}
+    text-align: center;
+    height: 220px;
+    padding: 0;
+    margin: 0;
+        h4{
+            font-size: 2.5rem;
+            padding: 20px 0;
+            margin: 0;
+        }
+    }
+    .footer_li{
+        font-size: 2rem;
+        padding: 0;
+        margin: 0;
+    }

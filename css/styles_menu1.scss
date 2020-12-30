@@ -48,6 +48,7 @@ header{
 /*titre*/
 .title{
     height: 300px;
+    position: relative;
     img{
         width: 100%;
         height: 270px;
@@ -57,7 +58,7 @@ header{
     h1{
         width: 100%;
         position: absolute;
-        top:280px;
+        top:224px;
         background-color:rgb(245, 243, 243);
         border-radius: 35px 35px 0 0;
         font-size: 2.8rem;
@@ -66,13 +67,31 @@ header{
     .fa-heart {
         font-size: 2.4rem;
         position: absolute;
-        top: 320px;
+        top: 260px;
         right:10%;
         background-color: rgb(245, 243, 243);
-        color: black;
-
     }
 }
+
+.full{
+    font-size: 2.35rem;
+    background: linear-gradient(to bottom right,$secondary, $primary);
+    -webkit-background-clip:text;
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+    transition: opacity 1s;
+    &:hover{
+        opacity: 1;
+    }
+}
+.empty{
+    font-size: 2.15rem;
+    position: absolute;
+    top: 19px;
+    right: 26px;
+}
+
 
 /*starter*/
 .starter{
@@ -86,10 +105,10 @@ header{
     }
 }
 
+/*transition*/
 
 
-
-.bloc{
+.keyf_one{
     display: flex;
     flex-direction: row;
     width: 92%;
@@ -100,7 +119,45 @@ header{
     margin-right: 0;
     padding: 0;
     margin-bottom: 15px;
+    box-shadow: 0 4px 15px silver;
     border: none;
+    opacity: 0;
+    animation:plat 2s ease-in-out forwards;
+    cursor: pointer;
+}
+.keyf_two{   
+    display: flex;
+    flex-direction: row;
+    width: 92%;
+    height: 66px;
+    background: white;
+    border-radius: 15px;
+    margin-left:4%;
+    margin-right: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px silver;
+    border: none;
+    opacity: 0;
+    animation:plat 2s 333ms ease-in-out forwards;
+    cursor: pointer;
+}
+.keyf_three{
+    display: flex;
+    flex-direction: row;
+    width: 92%;
+    height: 66px;
+    background: white;
+    border-radius: 15px;
+    margin-left:4%;
+    margin-right: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px silver;
+    border: none;
+    opacity: 0;
+    animation:plat 2s 666ms ease-in-out forwards;
+    cursor: pointer;
 }
 
 
@@ -115,59 +172,73 @@ header{
     border: none;
     &:hover + span{
         animation: width 1s linear forwards;
+        &> i {
+            animation: rotate 1s linear forwards;
+        }
     }
-
 }
 
-    h3{
-        font-size: 1.7rem;
-        width: 100%;
-        height: 33px;
-        line-height: 33px;
-        text-align: left;
-        padding: 5px 0 0 10px;
-        margin: 0;
-        text-overflow: ellipsis;
-    }
-    .more{
-        font-size: 1.5rem;
-        width: 80%;
-        height: 33px;
-        text-align: left;
-        padding: 5px 0 0 10px;
-        margin: 0;
-    }
-    .price{
-        flex: 1;
-        font-size: 1.5rem;
-        border-radius: 0 15px 15px 0;
-        padding-top: 5px;
-    }
-
+h3{
+    font-size: 1.7rem;
+    width: 100%;
+    height: 33px;
+    line-height: 33px;
+    text-align: left;
+    padding: 5px 0 0 10px;
+    margin: 0;
+    text-overflow: ellipsis;
+}
+.more{
+    font-size: 1.5rem;
+    height: 33px;
+    width: 85%;
+    text-align: left;
+    padding: 5px 0 0 10px;
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+}
+.price{
+    flex: 1;
+    height: 33px;
+    line-height: 33px;
+    font-size: 1.5rem;
+    border-radius: 0 15px 15px 0;
+    padding: 5px 10px 0px 0x;
+    flex: 1;
+}
 
 span{
     display: block;
     width: 0px;
     height: 50px;
     border-radius: 0 15px 15px 0;
-    opacity: 0;
-    line-height: 70px;
+    opacity: 1;
+    line-height: 50px;
     font-size: 2rem;
     background-color: $tertiary;
-    font-size: 2rem;
     color: white;
-    margin-top: 10px;
     overflow: hidden;
 }
 
-
+@keyframes plat{
+    0%{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 @keyframes width{
     0%{ 
     width: 0px;
     height: 50px;
     line-height: 50px;
-    margin-top: 10px;
+    margin-top: 8px;
     opacity: 0;
     border: none;
     }
@@ -175,25 +246,36 @@ span{
     width: 0px;
     height: 50px;
     line-height: 50px;
-    margin-top: 10px;
+    margin-top: 8px;
     opacity: 0;
     }
     25%{
     width: 15px;
-    height: 70px;
-    line-height: 70px;
+    height: 66px;
+    line-height: 66px;
     margin-top: 0;
     opacity: 0.5;
     }
     100%{ 
     width: 60px;
-    height: 70px;
-    line-height: 70px;
+    height: 66px;
+    line-height: 66px;
     margin-top: 0;
     opacity: 1;
-}
+    }
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotate(270deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }  
+    100% {
+        transform: rotate(0);
+    }
+}
 
 
 /*apres*/
@@ -245,7 +327,6 @@ span{
 
 
 
-
 /*footer*/
 
 footer{
@@ -284,5 +365,3 @@ ul{
         text-decoration: none;
     }
 }
-
-
