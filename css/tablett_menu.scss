@@ -1,0 +1,142 @@
+$primary: #9356DC;
+$secondary: #FF79DA;
+$tertiary: #99E2D0;
+
+header{
+    height: 150px;
+    padding-top: 50px;
+    h1{
+        font-size: 5rem;
+    }
+}
+.fa-arrow-left{
+    position:absolute;
+    top:70px;
+    left:25px;
+    font-size: 3rem;
+}
+
+/*titre*/
+.title{
+    h1{
+        font-size: 4rem;
+        padding-left: 5%;
+    }
+    .fa-heart{
+        font-size: 3rem;
+    }
+}
+.like_position{
+    top: 50px;
+}
+
+/*starter*/
+.starter, .dish, .dessert{
+    h2{
+        font-size: 3rem;
+        margin: 50px 0 40px 20px;
+        border-bottom: 5px solid $tertiary;
+        margin-left: 15%;
+    }
+}
+
+
+.keyf_one, .keyf_two, .keyf_three, .keyf_four{
+    width: 70%;
+    height: 100px;
+    margin-left: 15%;
+}
+.bloc_resto{
+    height: 100px;
+}
+h3{
+    height: 50px;
+    line-height: 50px;
+    font-size: 2.3rem;
+}
+.more{
+    height: 50px;
+    font-size: 2rem;
+}
+.price{
+    height: 50px;
+    font-size: 2rem;
+}
+span{
+    height: 84px;
+    line-height: 84px;
+    font-size: 3rem;
+}
+@keyframes width{
+    0%{ 
+    width: 0px;
+    height: 84px;
+    line-height: 84px;
+    margin-top: 8px;
+    opacity: 0;
+    border: none;
+    }
+    1%{
+    width: 0px;
+    height: 84px;
+    line-height: 84px;
+    margin-top: 8px;
+    opacity: 0;
+    }
+    25%{
+    width: 15px;
+    height: 100px;
+    line-height: 100px;
+    margin-top: 0;
+    opacity: 0.5;
+    }
+    100%{ 
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin-top: 0;
+    opacity: 1;
+}
+}
+@keyframes reduction{
+    0%{
+        width: 100%;
+    }
+    100%{
+        width: calc(100% - 100px);
+    }
+
+}
+
+.btn{
+    display: block;
+    font-size: 2.5rem;
+    height: 80px;
+    width: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+.btn_placement{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+/*footer*/
+
+footer{
+text-align: center;
+height: 220px;
+padding: 0;
+margin: 0;
+    h4{
+        font-size: 2.5rem;
+        padding: 20px 0;
+        margin: 0;
+    }
+}
+.footer_li{
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+}

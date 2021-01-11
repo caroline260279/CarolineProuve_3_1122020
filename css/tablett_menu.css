@@ -36,7 +36,7 @@ header h1 {
   margin-left: 15%;
 }
 
-.keyf_one, .keyf_two, .keyf_three {
+.keyf_one, .keyf_two, .keyf_three, .keyf_four {
   width: 70%;
   height: 100px;
   margin-left: 15%;
@@ -132,6 +132,24 @@ span {
   }
 }
 
+@-webkit-keyframes reduction {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: calc(100% - 100px);
+  }
+}
+
+@keyframes reduction {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: calc(100% - 100px);
+  }
+}
+
 .btn {
   display: block;
   font-size: 2.5rem;
@@ -165,4 +183,4 @@ footer h4 {
   padding: 0;
   margin: 0;
 }
-/*# sourceMappingURL=tablett_menu1.css.map */
+/*# sourceMappingURL=tablett_menu.css.map */
