@@ -121,6 +121,18 @@ header h1 {
 }
 
 /*titre*/
+@media screen and (max-width: 349px) {
+  .title h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 449px) {
+  .title h1 {
+    font-size: 2.8rem;
+  }
+}
+
 .title {
   height: 300px;
   position: relative;
@@ -140,7 +152,6 @@ header h1 {
   top: 224px;
   background-color: #f5f3f3;
   border-radius: 35px 35px 0 0;
-  font-size: 2.8rem;
   padding: 30px 0 0 20px;
 }
 
@@ -379,7 +390,7 @@ h3 {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
   font-size: 1.5rem;
-  padding: 5px 10px 0px 0px;
+  padding: 5px 0px 0px 20px;
 }
 
 span {

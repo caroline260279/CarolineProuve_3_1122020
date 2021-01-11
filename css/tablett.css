@@ -121,12 +121,17 @@ form {
 .like {
   font-size: 1.8rem;
   top: 160px;
-  right: 80px;
+  right: 50px;
 }
 
 .info_image {
   top: -120px;
   right: 20px;
+}
+
+.position_button {
+  max-width: 350px;
+  margin: auto;
 }
 
 /*footer*/
