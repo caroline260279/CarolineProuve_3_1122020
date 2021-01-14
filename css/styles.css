@@ -516,6 +516,7 @@ ol li:nth-child(3)::after {
 
 .position_button {
   position: relative;
+  width: 100%;
 }
 
 .fa-heart {

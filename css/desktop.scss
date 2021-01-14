@@ -38,9 +38,10 @@ form{
     text-align: center;
 }
 .btn_placement{
-    margin-left: calc((100% - 500px) / 2);
-    margin-right: calc((100% - 500px) / 2);
+    display: block;
+    margin: 50px auto;
 }
+
     
 
 
@@ -52,6 +53,7 @@ form{
 .process_title{
     font-size: 2.7rem;
     padding-left: 5%;
+    padding-bottom: 50px;
 }
 .process_ol{
     display: flex;
@@ -62,6 +64,7 @@ form{
 .process_li{
     font-size: 1.5rem;
     width: 350px;
+    margin: 0 4%;
     i{
         font-size: 1.5rem;
     }
@@ -112,7 +115,7 @@ form{
     height: 10px;
     font-size: 1.8rem;
     bottom: 10px;
-    right: 50px;
+    right: 22%;
 }
 .info_image{
     top:-120px;
@@ -120,8 +123,6 @@ form{
 }
 .position_button{
     height: 200px;
-    max-width: 350px;
-    margin: auto;
 }
 /*footer*/
 footer{
@@ -148,6 +149,7 @@ ul{
     height: 150px;
     line-height: 150px;
     flex: 5;
+    padding: 0 40px 0 0;
 
 }
 .footer_li{
