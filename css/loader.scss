@@ -3,17 +3,17 @@ $secondary: #FF79DA;
 $tertiary: #99E2D0;
 
 
-:root{
+:root {
     font-size: 10px;
 }
 
-.container{
+.container {
     display: inline-block;
     box-sizing: border-box;
-    background-color:white;
+    background-color: white;
     margin: 0;
     padding: 0;
-    font-family: "Shrikhand",serif,sans-serif;
+    font-family: "Shrikhand", serif, sans-serif;
     text-align: center;
     animation: fantom 5s linear forwards;
     transform-origin: left;
@@ -22,7 +22,7 @@ $tertiary: #99E2D0;
 }
 
 
-.charge{
+.charge {
     height: 300px;
     line-height: 500px;
     font-size: 7rem;
@@ -31,16 +31,18 @@ $tertiary: #99E2D0;
     text-align: center;
     font-weight: 900;
 }
-.loader{
+
+.loader {
     position: relative;
     width: 240px;
     height: 40px;
     margin: auto;
     border-radius: 35px;
-    background:  white;
+    background: white;
     box-shadow: -2px -2px 8px $secondary;
 }
-.loader::before{
+
+.loader::before {
     content: "";
     position: absolute;
     top: 0px;
@@ -48,10 +50,11 @@ $tertiary: #99E2D0;
     width: 40px;
     height: 40px;
     border-radius: 35px;
-    background: linear-gradient(to bottom right,$secondary, $primary);
+    background: linear-gradient(to bottom right, $secondary, $primary);
     animation: loading 3s linear forwards;
 }
-.loader::after{
+
+.loader::after {
     content: "";
     position: absolute;
     top: 0;
@@ -64,47 +67,46 @@ $tertiary: #99E2D0;
 
 }
 
-@keyframes loading{
+@keyframes loading {
     0% {
         width: 40px;
     }
     100% {
-        width:240px;
+        width: 240px;
     }
-    100%{
+    100% {
 
     }
 }
 
 
-
-@keyframes fantom{
-    0%{
+@keyframes fantom {
+    0% {
         opacity: 1;
     }
-    60%{
+    60% {
         opacity: 1;
     }
-    61%{
+    61% {
     }
-    63%{
+    63% {
         opacity: 0.9;
     }
-    70%{
+    70% {
         opacity: 0.8;
     }
-    80%{
+    80% {
         opacity: 0.5;
     }
-    90%{
+    90% {
         opacity: 0.2;
     }
-    100%{
+    100% {
         opacity: 0;
     }
 }
 
-@keyframes apparition{
+@keyframes apparition {
     0% {
         transform: translateX(-9999px);
     }

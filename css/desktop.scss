@@ -1,131 +1,149 @@
-.container{
+.container {
     height: 1400px;
 }
-header{
+
+header {
     height: 250px;
-    h1{
+
+    h1 {
         font-size: 9rem;
     }
 }
 
 
 /*location*/
-form{
+form {
     text-align: center;
 }
-.location_header{
 
-    i{
+.location_header {
+
+    i {
         margin-left: 0;
         font-size: 2rem;
     }
-    input{
-        width:170px;
+
+    input {
+        width: 170px;
         font-size: 2rem;
     }
 
 }
-.location_p_one, .location_p_two{
+
+.location_p_one, .location_p_two {
     margin: 0;
     padding-left: 0;
     width: 100%;
     text-align: center;
 }
-.btn{
+
+.btn {
     font-size: 2.2rem;
     height: 60px;
     width: 500px;
     text-align: center;
 }
-.btn_placement{
+
+.btn_placement {
     display: block;
     margin: 50px auto;
 }
 
-    
-
 
 /*process*/
 
-.process{
+.process {
     height: 300px;
 }
-.process_title{
+
+.process_title {
     font-size: 2.7rem;
     padding-left: 5%;
     padding-bottom: 50px;
 }
-.process_ol{
+
+.process_ol {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 0 20px;
 }
-.process_li{
+
+.process_li {
     font-size: 1.5rem;
     width: 350px;
     margin: 0 4%;
-    i{
+
+    i {
         font-size: 1.5rem;
     }
 }
 
 
 /*restaurants*/
-.restaurants{
+.restaurants {
     display: grid;
-    grid-template-rows: 130px 1fr ;
+    grid-template-rows: 130px 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "T  T  T  T"
     "Z1 Z2 Z3 Z4";
 
-    a:nth-child(1), .restaurants_figure:nth-child(1){
+    a:nth-child(1), .restaurants_figure:nth-child(1) {
         grid-area: Z1;
     }
-    .restaurants_figure:nth-child(2){
+
+    .restaurants_figure:nth-child(2) {
         grid-area: Z2;
     }
-    .restaurants_figure:nth-child(3){
+
+    .restaurants_figure:nth-child(3) {
         grid-area: Z3;
     }
-    .restaurants_figure:nth-child(4){
+
+    .restaurants_figure:nth-child(4) {
         grid-area: Z4;
     }
 }
 
-.restaurants_title{
+.restaurants_title {
     grid-area: T;
     font-size: 2.7rem;
     padding-left: 5%;
 }
-.restaurants_figure{
+
+.restaurants_figure {
     height: 200px;
     max-width: 300px;
 }
 
-.restaurants_h{
+.restaurants_h {
     font-size: 1.5rem;
     padding-top: 10px;
 }
-.restaurants_p{
+
+.restaurants_p {
     font-size: 1.2rem;
 }
-.like{
+
+.like {
     height: 10px;
     font-size: 1.8rem;
     bottom: 10px;
     right: 22%;
 }
-.info_image{
-    top:-120px;
-    right:20px;
+
+.info_image {
+    top: -120px;
+    right: 20px;
 }
-.position_button{
+
+.position_button {
     height: 200px;
 }
+
 /*footer*/
-footer{
+footer {
     display: flex;
     text-align: center;
     justify-content: stretch;
@@ -133,16 +151,18 @@ footer{
     padding: 0;
     margin: 0;
     text-align: center;
-        h4{
-            font-size: 2.5rem;
-            margin: 0;
-            padding: 0 20px 0 40px;
-            height: 150px;
-            line-height: 150px;
-            flex: 1;
-        }
+
+    h4 {
+        font-size: 2.5rem;
+        margin: 0;
+        padding: 0 20px 0 40px;
+        height: 150px;
+        line-height: 150px;
+        flex: 1;
     }
-ul{
+}
+
+ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -152,7 +172,8 @@ ul{
     padding: 0 40px 0 0;
 
 }
-.footer_li{
+
+.footer_li {
     font-size: 2rem;
     padding: 0;
     margin: 0;
