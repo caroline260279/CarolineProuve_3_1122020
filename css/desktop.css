@@ -86,7 +86,7 @@ form {
       grid-template-rows: 130px 1fr;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "T  T  T  T" "Z1 Z2 Z3 Z4";
+      grid-template-areas: "T  T  T  T" "Z1 Z2 Z3 Z4";
 }
 
 .restaurants a:nth-child(1), .restaurants .restaurants_figure:nth-child(1) {

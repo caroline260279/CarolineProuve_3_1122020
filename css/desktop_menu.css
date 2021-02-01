@@ -158,7 +158,7 @@ header h1 {
       grid-template-rows: 350px 1fr 200px;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas: "T  T  T" "Z1 Z2 Z3" "B  B  B";
+      grid-template-areas: "T  T  T" "Z1 Z2 Z3" "B  B  B";
 }
 
 .resto .title {

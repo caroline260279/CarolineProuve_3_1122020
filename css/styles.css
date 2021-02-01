@@ -89,7 +89,7 @@ body {
 }
 
 h1, .logo {
-  font-family: 'Shrikhand',serif, sans-serif;
+  font-family: 'Shrikhand', serif, sans-serif;
 }
 
 /* loader */
@@ -102,7 +102,7 @@ h1, .logo {
   background-color: white;
   margin: 0;
   padding: 0;
-  font-family: "Shrikhand",serif,sans-serif;
+  font-family: "Shrikhand", serif, sans-serif;
   text-align: center;
   -webkit-animation: fantom 5s linear forwards;
           animation: fantom 5s linear forwards;
@@ -125,7 +125,7 @@ h1, .logo {
 }
 
 .charge {
-  font-family: "Shrikhand",serif,sans-serif;
+  font-family: "Shrikhand", serif, sans-serif;
   height: 300px;
   line-height: 500px;
   font-size: 5rem;
@@ -349,7 +349,7 @@ form {
 .location_p_two {
   padding: 15px 0 0 10px;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   line-height: 2rem;
   font-weight: 400;
 }

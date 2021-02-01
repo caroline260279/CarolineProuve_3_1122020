@@ -16,20 +16,18 @@ header h1 {
 
 /*titre*/
 .title h1 {
+  top: 224px;
   font-size: 4rem;
   padding-left: 5%;
 }
 
 .title .fa-heart {
   font-size: 3rem;
-}
-
-.like_position {
-  top: 50px;
+  top: 270px;
 }
 
 /*starter*/
-.starter h2, .dish h2, .dessert h2 {
+.starter h2 {
   font-size: 3rem;
   margin: 50px 0 40px 20px;
   border-bottom: 5px solid #99E2D0;
