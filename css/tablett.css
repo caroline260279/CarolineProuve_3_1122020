@@ -1,157 +1,157 @@
 .container {
-  height: 1750px;
+    height: 1750px;
 }
 
 header {
-  height: 150px;
-  padding-top: 5%;
+    height: 150px;
+    padding-top: 5%;
 }
 
 header h1 {
-  font-size: 5rem;
+    font-size: 5rem;
 }
 
 /*location*/
 form {
-  text-align: center;
+    text-align: center;
 }
 
 .location_header i {
-  margin-left: 0;
-  font-size: 2rem;
+    margin-left: 0;
+    font-size: 2rem;
 }
 
 .location_header input {
-  width: 170px;
-  font-size: 2rem;
+    width: 170px;
+    font-size: 2rem;
 }
 
 .location_p_one,
 .location_p_two {
-  margin: 0;
-  padding-left: 0;
-  width: 100%;
-  text-align: center;
+    margin: 0;
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
 }
 
 .process {
-  height: 500px;
+    height: 500px;
 }
 
 @media screen and (min-width: 700px) and (max-width: 960px) {
-  .btn {
-    font-size: 2.2rem;
-    height: 60px;
-    width: 500px;
-    text-align: center;
-  }
-  .btn_placement {
-    display: block;
-    margin: 40px auto;
-  }
+    .btn {
+        font-size: 2.2rem;
+        height: 60px;
+        width: 500px;
+        text-align: center;
+    }
+    .btn_placement {
+        display: block;
+        margin: 40px auto;
+    }
 }
 
 /*process*/
 @media screen and (min-width: 700px) and (max-width: 960px) {
-  .process_title {
-    font-size: 2.7rem;
-    padding-left: 10%;
-  }
-  .process_li {
-    display: block;
-    font-size: 2.2rem;
-    width: 500px;
-    margin: 35px auto;
-  }
+    .process_title {
+        font-size: 2.7rem;
+        padding-left: 10%;
+    }
+    .process_li {
+        display: block;
+        font-size: 2.2rem;
+        width: 500px;
+        margin: 35px auto;
+    }
 }
 
 /*restaurants*/
 .restaurants {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 130px 1fr 1fr;
-      grid-template-rows: 130px 1fr 1fr;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "T  T " "Z1 Z2" "Z3 Z4";
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 130px 1fr 1fr;
+    grid-template-rows: 130px 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "T  T " "Z1 Z2" "Z3 Z4";
 }
 
 .restaurants a:nth-child(1),
 .restaurants .restaurants_figure:nth-child(1) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: Z1;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: Z1;
 }
 
 .restaurants .restaurants_figure:nth-child(2) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: Z2;
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: Z2;
 }
 
 .restaurants .restaurants_figure:nth-child(3) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: Z3;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: Z3;
 }
 
 .restaurants .restaurants_figure:nth-child(4) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: Z4;
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: Z4;
 }
 
 .restaurants_title {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: T;
-  font-size: 2.7rem;
-  padding-left: 10%;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: T;
+    font-size: 2.7rem;
+    padding-left: 10%;
 }
 
 .restaurants_figure {
-  height: 200px;
-  max-width: 300px;
+    height: 200px;
+    max-width: 300px;
 }
 
 .restaurants_h {
-  font-size: 1.5rem;
-  padding-top: 10px;
+    font-size: 1.5rem;
+    padding-top: 10px;
 }
 
 .restaurants_p {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 .like {
-  font-size: 1.8rem;
-  top: 160px;
-  right: 22%;
+    font-size: 1.8rem;
+    top: 160px;
+    right: 22%;
 }
 
 .info_image {
-  top: -120px;
-  right: 20px;
+    top: -120px;
+    right: 20px;
 }
 
 /*footer*/
 footer {
-  text-align: center;
-  height: 220px;
-  padding: 0;
-  margin: 0;
+    text-align: center;
+    height: 220px;
+    padding: 0;
+    margin: 0;
 }
 
 footer h4 {
-  font-size: 2.5rem;
-  padding: 20px 0;
-  margin: 0;
+    font-size: 2.5rem;
+    padding: 20px 0;
+    margin: 0;
 }
 
 .footer_li {
-  font-size: 2rem;
-  padding: 0;
-  margin: 0;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
 }
 /*# sourceMappingURL=tablett.css.map */

@@ -1,203 +1,203 @@
 .container {
-  height: 1400px;
+    height: 1400px;
 }
 
 header {
-  height: 250px;
+    height: 250px;
 
-  h1 {
-    font-size: 9rem;
-  }
+    h1 {
+        font-size: 9rem;
+    }
 }
 
 .fa-arrow-left {
-  font-size: 5rem;
-  top: 100px;
+    font-size: 5rem;
+    top: 100px;
 }
 
 /*starter*/
 .title {
-  height: 150px;
+    height: 150px;
 
-  h1 {
-    font-size: 6rem;
-    padding-left: 10%;
-  }
+    h1 {
+        font-size: 6rem;
+        padding-left: 10%;
+    }
 
-  .fa-heart {
-    font-size: 4rem;
-  }
+    .fa-heart {
+        font-size: 4rem;
+    }
 }
 
 .like_position {
-  top: 60px;
+    top: 60px;
 }
 
 .keyf_one,
 .keyf_two,
 .keyf_three,
 .keyf_four {
-  height: 80px;
-  margin-left: 15%;
+    height: 80px;
+    margin-left: 15%;
 }
 
 .bloc_resto {
-  height: 80px;
+    height: 80px;
 
-  h3 {
-    height: 40px;
-    line-height: 40px;
-    font-size: 1.8rem;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
+    h3 {
+        height: 40px;
+        line-height: 40px;
+        font-size: 1.8rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
 
-  .more {
-    height: 40px;
-    font-size: 1.5rem;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
+    .more {
+        height: 40px;
+        font-size: 1.5rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
 
-  .price {
-    height: 40px;
-    font-size: 1.5rem;
-    text-overflow: ellipsis;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
+    .price {
+        height: 40px;
+        font-size: 1.5rem;
+        text-overflow: ellipsis;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
 }
 
 @keyframes width {
-  0% {
-    width: 0px;
-    height: 64px;
-    line-height: 64px;
-    margin-top: 8px;
-    opacity: 0;
-    border: none;
-  }
-  1% {
-    width: 0px;
-    height: 64px;
-    line-height: 64px;
-    margin-top: 8px;
-    opacity: 0;
-  }
-  25% {
-    width: 15px;
-    height: 80px;
-    line-height: 80px;
-    margin-top: 0;
-    opacity: 0.5;
-  }
-  100% {
-    width: 60px;
-    height: 80px;
-    line-height: 80px;
-    margin-top: 0;
-    opacity: 1;
-  }
+    0% {
+        width: 0px;
+        height: 64px;
+        line-height: 64px;
+        margin-top: 8px;
+        opacity: 0;
+        border: none;
+    }
+    1% {
+        width: 0px;
+        height: 64px;
+        line-height: 64px;
+        margin-top: 8px;
+        opacity: 0;
+    }
+    25% {
+        width: 15px;
+        height: 80px;
+        line-height: 80px;
+        margin-top: 0;
+        opacity: 0.5;
+    }
+    100% {
+        width: 60px;
+        height: 80px;
+        line-height: 80px;
+        margin-top: 0;
+        opacity: 1;
+    }
 }
 
 @keyframes reduction {
-  0% {
-    width: 100%;
-  }
-  100% {
-    width: calc(100% - 80px);
-  }
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: calc(100% - 80px);
+    }
 }
 
 .resto {
-  display: grid;
-  grid-template-rows: 350px 1fr 200px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    "T  T  T"
-    "Z1 Z2 Z3"
-    "B  B  B";
+    display: grid;
+    grid-template-rows: 350px 1fr 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "T  T  T"
+        "Z1 Z2 Z3"
+        "B  B  B";
 
-  .title {
-    grid-area: T;
-  }
+    .title {
+        grid-area: T;
+    }
 
-  .starter {
-    grid-area: Z1;
-  }
+    .starter {
+        grid-area: Z1;
+    }
 
-  .dish {
-    grid-area: Z2;
-    padding: 0;
-  }
+    .dish {
+        grid-area: Z2;
+        padding: 0;
+    }
 
-  .dessert {
-    grid-area: Z3;
-    padding: 0;
-  }
+    .dessert {
+        grid-area: Z3;
+        padding: 0;
+    }
 
-  .btn {
-    display: block;
-    grid-area: B;
-    font-size: 2.5rem;
-    height: 80px;
-    width: 350px;
-    margin: auto;
-    text-align: center;
-  }
+    .btn {
+        display: block;
+        grid-area: B;
+        font-size: 2.5rem;
+        height: 80px;
+        width: 350px;
+        margin: auto;
+        text-align: center;
+    }
 
-  .btn_placement {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
+    .btn_placement {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
 }
 
 h3 {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .more {
-  font-size: 1.3rem;
+    font-size: 1.3rem;
 }
 
 .price {
-  font-size: 1.3rem;
+    font-size: 1.3rem;
 }
 
 /*footer*/
 footer {
-  display: flex;
-  text-align: center;
-  height: 150px;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-
-  h4 {
-    font-size: 2.5rem;
-    margin: 0;
-    padding: 0 20px 0 40px;
+    display: flex;
+    text-align: center;
     height: 150px;
-    line-height: 150px;
-    flex: 1;
-  }
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    h4 {
+        font-size: 2.5rem;
+        margin: 0;
+        padding: 0 20px 0 40px;
+        height: 150px;
+        line-height: 150px;
+        flex: 1;
+    }
 }
 
 ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 150px;
-  line-height: 150px;
-  flex: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 150px;
+    line-height: 150px;
+    flex: 5;
 }
 
 .footer_li {
-  font-size: 2rem;
-  padding: 0;
-  margin: 0;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
 }
