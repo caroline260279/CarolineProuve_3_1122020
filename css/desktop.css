@@ -25,7 +25,8 @@ form {
   font-size: 2rem;
 }
 
-.location_p_one, .location_p_two {
+.location_p_one,
+.location_p_two {
   margin: 0;
   padding-left: 0;
   width: 100%;
@@ -89,7 +90,8 @@ form {
       grid-template-areas: "T  T  T  T" "Z1 Z2 Z3 Z4";
 }
 
-.restaurants a:nth-child(1), .restaurants .restaurants_figure:nth-child(1) {
+.restaurants a:nth-child(1),
+.restaurants .restaurants_figure:nth-child(1) {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: Z1;

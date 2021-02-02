@@ -1,391 +1,389 @@
 @import "normalize/normalize.scss";
 
-$primary: #9356DC;
-$secondary: #FF79DA;
-$tertiary: #99E2D0;
+$primary: #9356dc;
+$secondary: #ff79da;
+$tertiary: #99e2d0;
 $quaternary: linear-gradient(to bottom right, $secondary, $primary);
 
 :root {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 body {
-    font-family: 'roboto', serif, sans-serif;
-    background-color: rgb(245, 243, 243);
+  font-family: "roboto", serif, sans-serif;
+  background-color: rgb(245, 243, 243);
 }
 
-h1, .logo {
-    font-family: 'Shrikhand', serif, sans-serif;
+h1,
+.logo {
+  font-family: "Shrikhand", serif, sans-serif;
 }
 
 /*header*/
 header {
-    height: 60px;
-    padding-top: 15px;
+  height: 60px;
+  padding-top: 15px;
 
-    a {
-        color: black;
-        text-decoration: none;
-    }
+  a {
+    color: black;
+    text-decoration: none;
+  }
 
-    h1 {
-        font-size: 3rem;
-        text-align: center;
-    }
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
 }
 
 .fa-arrow-left {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    font-size: 1.8rem;
-    background-color: rgb(245, 243, 243);
-    color: black;
-    border: none;
-    opacity: 1;
-
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  font-size: 1.8rem;
+  background-color: rgb(245, 243, 243);
+  color: black;
+  border: none;
+  opacity: 1;
 }
-
 
 /*titre*/
 .title {
-    height: 300px;
+  height: 300px;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
     position: relative;
+  }
 
-    img {
-        width: 100%;
-        height: 270px;
-        object-fit: cover;
-        position: relative;
-    }
+  h1 {
+    width: 100%;
+    position: absolute;
+    top: 224px;
+    background-color: rgb(245, 243, 243);
+    border-radius: 35px 35px 0 0;
+    font-size: 2.8rem;
+    padding: 30px 0 0 20px;
+  }
 
-    h1 {
-        width: 100%;
-        position: absolute;
-        top: 224px;
-        background-color: rgb(245, 243, 243);
-        border-radius: 35px 35px 0 0;
-        font-size: 2.8rem;
-        padding: 30px 0 0 20px;
-    }
-
-    .fa-heart {
-        font-size: 2.4rem;
-        position: absolute;
-        top: 260px;
-        right: 10%;
-        background-color: rgb(245, 243, 243);
-    }
+  .fa-heart {
+    font-size: 2.4rem;
+    position: absolute;
+    top: 260px;
+    right: 10%;
+    background-color: rgb(245, 243, 243);
+  }
 }
 
 .full {
-    font-size: 2.35rem;
-    background: linear-gradient(to bottom right, $secondary, $primary);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    opacity: 0;
-    transition: opacity 1s;
+  font-size: 2.35rem;
+  background: linear-gradient(to bottom right, $secondary, $primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transition: opacity 1s;
 
-    &:hover {
-        opacity: 1;
-    }
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .empty {
-    font-size: 2.15rem;
-    position: absolute;
-    top: 19px;
-    right: 26px;
+  font-size: 2.15rem;
+  position: absolute;
+  top: 19px;
+  right: 26px;
 }
-
 
 /*starter*/
 .starter {
-    background-color: rgb(245, 243, 243);
+  background-color: rgb(245, 243, 243);
 
-    h2 {
-        width: 42px;
-        font-size: 1.5rem;
-        font-weight: 400;
-        margin: 25px 0 18px 20px;
-        border-bottom: 3px solid $tertiary;
-    }
+  h2 {
+    width: 42px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 25px 0 18px 20px;
+    border-bottom: 3px solid $tertiary;
+  }
 }
 
 /*transition*/
 
-
 .keyf_one {
-    display: flex;
-    flex-direction: row;
-    width: 92%;
-    height: 66px;
-    background: white;
-    border-radius: 15px;
-    margin-left: 4%;
-    margin-right: 0;
-    padding: 0;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 15px silver;
-    border: none;
-    opacity: 0;
-    animation: plat 2s ease-in-out forwards;
-    cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  width: 92%;
+  height: 66px;
+  background: white;
+  border-radius: 15px;
+  margin-left: 4%;
+  margin-right: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 15px silver;
+  border: none;
+  opacity: 0;
+  animation: plat 2s ease-in-out forwards;
+  cursor: pointer;
 }
 
 .keyf_two {
-    display: flex;
-    flex-direction: row;
-    width: 92%;
-    height: 66px;
-    background: white;
-    border-radius: 15px;
-    margin-left: 4%;
-    margin-right: 0;
-    padding: 0;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 15px silver;
-    border: none;
-    opacity: 0;
-    animation: plat 2s 333ms ease-in-out forwards;
-    cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  width: 92%;
+  height: 66px;
+  background: white;
+  border-radius: 15px;
+  margin-left: 4%;
+  margin-right: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 15px silver;
+  border: none;
+  opacity: 0;
+  animation: plat 2s 333ms ease-in-out forwards;
+  cursor: pointer;
 }
 
 .keyf_three {
-    display: flex;
-    flex-direction: row;
-    width: 92%;
-    height: 66px;
-    background: white;
-    border-radius: 15px;
-    margin-left: 4%;
-    margin-right: 0;
-    padding: 0;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 15px silver;
-    border: none;
-    opacity: 0;
-    animation: plat 2s 666ms ease-in-out forwards;
-    cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  width: 92%;
+  height: 66px;
+  background: white;
+  border-radius: 15px;
+  margin-left: 4%;
+  margin-right: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 15px silver;
+  border: none;
+  opacity: 0;
+  animation: plat 2s 666ms ease-in-out forwards;
+  cursor: pointer;
 }
 
-
 .bloc_resto {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 66px;
-    border-radius: 15px;
-    padding: 0;
-    border: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 66px;
+  border-radius: 15px;
+  padding: 0;
+  border: none;
 
-    &:hover + span {
-        animation: width 1s linear forwards;
+  &:hover + span {
+    animation: width 1s linear forwards;
 
-        & > i {
-            animation: rotate 1s linear forwards;
-        }
+    & > i {
+      animation: rotate 1s linear forwards;
     }
+  }
 }
 
 h3 {
-    font-size: 1.7rem;
-    width: 100%;
-    height: 33px;
-    line-height: 33px;
-    text-align: left;
-    padding: 5px 0 0 10px;
-    margin: 0;
-    text-overflow: ellipsis;
+  font-size: 1.7rem;
+  width: 100%;
+  height: 33px;
+  line-height: 33px;
+  text-align: left;
+  padding: 5px 0 0 10px;
+  margin: 0;
+  text-overflow: ellipsis;
 }
 
 .more {
-    font-size: 1.5rem;
-    height: 33px;
-    width: 85%;
-    text-align: left;
-    padding: 5px 0 0 10px;
-    margin: 0;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow-x: hidden;
+  font-size: 1.5rem;
+  height: 33px;
+  width: 85%;
+  text-align: left;
+  padding: 5px 0 0 10px;
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
 }
 
 .price {
-    flex: 1;
-    height: 33px;
-    line-height: 33px;
-    font-size: 1.5rem;
-    border-radius: 0 15px 15px 0;
-    padding: 5px 10px 0px 0x;
-    flex: 1;
+  flex: 1;
+  height: 33px;
+  line-height: 33px;
+  font-size: 1.5rem;
+  border-radius: 0 15px 15px 0;
+  padding: 5px 10px 0px 0x;
+  flex: 1;
 }
 
 span {
-    display: block;
-    width: 0px;
-    height: 50px;
-    border-radius: 0 15px 15px 0;
-    opacity: 1;
-    line-height: 50px;
-    font-size: 2rem;
-    background-color: $tertiary;
-    color: white;
-    overflow: hidden;
+  display: block;
+  width: 0px;
+  height: 50px;
+  border-radius: 0 15px 15px 0;
+  opacity: 1;
+  line-height: 50px;
+  font-size: 2rem;
+  background-color: $tertiary;
+  color: white;
+  overflow: hidden;
 }
 
 @keyframes plat {
-    0% {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes width {
-    0% {
-        width: 0px;
-        height: 50px;
-        line-height: 50px;
-        margin-top: 8px;
-        opacity: 0;
-        border: none;
-    }
-    1% {
-        width: 0px;
-        height: 50px;
-        line-height: 50px;
-        margin-top: 8px;
-        opacity: 0;
-    }
-    25% {
-        width: 15px;
-        height: 66px;
-        line-height: 66px;
-        margin-top: 0;
-        opacity: 0.5;
-    }
-    100% {
-        width: 60px;
-        height: 66px;
-        line-height: 66px;
-        margin-top: 0;
-        opacity: 1;
-    }
+  0% {
+    width: 0px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 8px;
+    opacity: 0;
+    border: none;
+  }
+  1% {
+    width: 0px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 8px;
+    opacity: 0;
+  }
+  25% {
+    width: 15px;
+    height: 66px;
+    line-height: 66px;
+    margin-top: 0;
+    opacity: 0.5;
+  }
+  100% {
+    width: 60px;
+    height: 66px;
+    line-height: 66px;
+    margin-top: 0;
+    opacity: 1;
+  }
 }
 
 @keyframes rotate {
-    0% {
-        transform: rotate(270deg);
-    }
-    50% {
-        transform: rotate(180deg);
-    }
-    100% {
-        transform: rotate(0);
-    }
+  0% {
+    transform: rotate(270deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
-
 
 /*apres*/
 
 .dish {
-    background-color: rgb(245, 243, 243);
-    padding-top: 15px;
+  background-color: rgb(245, 243, 243);
+  padding-top: 15px;
 
-    h2 {
-        width: 42px;
-        font-size: 1.5rem;
-        font-weight: 400;
-        margin: 15px 0 18px 20px;
-        border-bottom: 3px solid $tertiary;
-    }
+  h2 {
+    width: 42px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 15px 0 18px 20px;
+    border-bottom: 3px solid $tertiary;
+  }
 }
 
 .dessert {
-    background-color: rgb(245, 243, 243);
-    padding-top: 20px;
+  background-color: rgb(245, 243, 243);
+  padding-top: 20px;
 
-    h2 {
-        width: 42px;
-        font-size: 1.5rem;
-        font-weight: 400;
-        margin: 15px 0 18px 20px;
-        border-bottom: 3px solid $tertiary;
-    }
+  h2 {
+    width: 42px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 15px 0 18px 20px;
+    border-bottom: 3px solid $tertiary;
+  }
 }
 
 .btn {
-    width: 50%;
-    height: 48px;
-    font-size: 1.5rem;
-    border-radius: 35px;
-    letter-spacing: 0.4px;
-    color: white;
-    background: linear-gradient(to bottom right, $secondary, $primary);
-    box-shadow: 0 5px 10px silver;
-    border: none;
+  width: 50%;
+  height: 48px;
+  font-size: 1.5rem;
+  border-radius: 35px;
+  letter-spacing: 0.4px;
+  color: white;
+  background: linear-gradient(to bottom right, $secondary, $primary);
+  box-shadow: 0 5px 10px silver;
+  border: none;
 
-    &:hover {
-        background: linear-gradient(to bottom right, lighten($secondary, 5%), lighten($primary, 5%));
-        box-shadow: 0 5px 10px darken(silver, 20%);
-    }
+  &:hover {
+    background: linear-gradient(
+      to bottom right,
+      lighten($secondary, 5%),
+      lighten($primary, 5%)
+    );
+    box-shadow: 0 5px 10px darken(silver, 20%);
+  }
 }
 
 .btn_placement {
-    margin-top: 40px;
-    margin-bottom: 80px;
-    margin-left: 25%;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  margin-left: 25%;
 }
-
 
 /*footer*/
 
 footer {
-    background-color: rgb(29, 26, 26);
-    color: white;
-    height: 200px;
+  background-color: rgb(29, 26, 26);
+  color: white;
+  height: 200px;
 
-    h4 {
-        font-family: 'Shrikhand';
-        font-size: 1.8rem;
-        padding: 20px 0 10px 25px;
-        font-weight: 500;
+  h4 {
+    font-family: "Shrikhand";
+    font-size: 1.8rem;
+    padding: 20px 0 10px 25px;
+    font-weight: 500;
 
-        a {
-            text-decoration: none;
-            color: white;
-        }
+    a {
+      text-decoration: none;
+      color: white;
     }
+  }
 }
 
 .footer_li {
-    list-style: none;
-    font-size: 1.5rem;
-    padding: 5px 0 0 25px;
+  list-style: none;
+  font-size: 1.5rem;
+  padding: 5px 0 0 25px;
 
-    i {
-        padding-right: 10px;
-        font-size: 1.5rem;
-    }
+  i {
+    padding-right: 10px;
+    font-size: 1.5rem;
+  }
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 
-    li:nth-child(2) {
-        .fa-hands-helping {
-            font-size: 1rem;
-        }
+  li:nth-child(2) {
+    .fa-hands-helping {
+      font-size: 1rem;
     }
+  }
 
-    a {
-        color: white;
-        text-decoration: none;
-    }
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }

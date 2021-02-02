@@ -33,7 +33,10 @@ header h1 {
   top: 60px;
 }
 
-.keyf_one, .keyf_two, .keyf_three, .keyf_four {
+.keyf_one,
+.keyf_two,
+.keyf_three,
+.keyf_four {
   height: 80px;
   margin-left: 15%;
 }

@@ -85,11 +85,12 @@ select {
 }
 
 body {
-  font-family: 'roboto', serif, sans-serif;
+  font-family: "roboto", serif, sans-serif;
 }
 
-h1, .logo {
-  font-family: 'Shrikhand', serif, sans-serif;
+h1,
+.logo {
+  font-family: "Shrikhand", serif, sans-serif;
 }
 
 /* loader */
@@ -129,7 +130,7 @@ h1, .logo {
   height: 300px;
   line-height: 500px;
   font-size: 5rem;
-  color: #FF79DA;
+  color: #ff79da;
   margin-bottom: 50px;
   text-align: center;
   font-weight: 900;
@@ -142,8 +143,8 @@ h1, .logo {
   margin: auto;
   border-radius: 35px;
   background: white;
-  -webkit-box-shadow: -2px -2px 8px #FF79DA;
-          box-shadow: -2px -2px 8px #FF79DA;
+  -webkit-box-shadow: -2px -2px 8px #ff79da;
+          box-shadow: -2px -2px 8px #ff79da;
 }
 
 .loader::before {
@@ -154,8 +155,8 @@ h1, .logo {
   width: 40px;
   height: 40px;
   border-radius: 35px;
-  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
   -webkit-animation: loading 3500ms linear forwards;
           animation: loading 3500ms linear forwards;
 }
@@ -169,8 +170,8 @@ h1, .logo {
   height: 40px;
   border-radius: 35px;
   background: transparent;
-  -webkit-box-shadow: 2px 2px 6px #9356DC;
-          box-shadow: 2px 2px 6px #9356DC;
+  -webkit-box-shadow: 2px 2px 6px #9356dc;
+          box-shadow: 2px 2px 6px #9356dc;
 }
 
 @-webkit-keyframes loading {
@@ -365,8 +366,8 @@ button {
   border-radius: 35px;
   letter-spacing: 0.4px;
   color: white;
-  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
   -webkit-box-shadow: 0 5px 10px silver;
           box-shadow: 0 5px 10px silver;
   border: none;
@@ -433,7 +434,7 @@ button {
   content: "1";
   border-radius: 35px;
   color: white;
-  background-color: #9356DC;
+  background-color: #9356dc;
 }
 
 ol li:nth-child(2)::before {
@@ -442,7 +443,7 @@ ol li:nth-child(2)::before {
 
 ol li:nth-child(3) i {
   font-size: 1.5rem;
-  color: #9356DC;
+  color: #9356dc;
 }
 
 ol li:nth-child(3)::before {
@@ -458,7 +459,7 @@ ol li:nth-child(3)::after {
   width: 100%;
   height: 100%;
   opacity: 0.08;
-  background-color: #FF79DA;
+  background-color: #ff79da;
   border-radius: 25px;
 }
 
@@ -528,8 +529,8 @@ ol li:nth-child(3)::after {
 
 .full {
   font-size: 2.4rem;
-  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
   -webkit-background-clip: text;
   color: transparent;
   position: absolute;
@@ -566,7 +567,7 @@ ol li:nth-child(3)::after {
   line-height: 30px;
   font-size: 1.5rem;
   text-align: center;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   position: absolute;
   top: -160px;
   right: 10px;
@@ -580,7 +581,7 @@ footer {
 }
 
 footer h4 {
-  font-family: 'Shrikhand';
+  font-family: "Shrikhand";
   font-size: 1.8rem;
   padding: 20px 0 10px 25px;
   font-weight: 500;
